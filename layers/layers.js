@@ -178,13 +178,16 @@ var features_Pemukiman_Warga_11 = format_Pemukiman_Warga_11.readFeatures(json_Pe
 var jsonSource_Pemukiman_Warga_11 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Pemukiman_Warga_11.addFeatures(features_Pemukiman_Warga_11);
+jsonSource_Pemukiman_Warga_11.addFeatures(features_Pemukiman_Warga_11);cluster_Pemukiman_Warga_11 = new ol.source.Cluster({
+  distance: 10,
+  source: jsonSource_Pemukiman_Warga_11
+});
 var lyr_Pemukiman_Warga_11 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Pemukiman_Warga_11, 
+                source:cluster_Pemukiman_Warga_11, 
                 style: style_Pemukiman_Warga_11,
                 popuplayertitle: "Pemukiman_Warga",
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/Pemukiman_Warga_11.png" /> Pemukiman_Warga'
             });
 var format_Toponimi_12 = new ol.format.GeoJSON();
@@ -323,7 +326,7 @@ var lyr_Sarana_Ibadah_20 = new ol.layer.Vector({
                 title: '<img src="styles/legend/Sarana_Ibadah_20.png" /> Sarana_Ibadah'
             });
 
-lyr_OpenStreetMap_0.setVisible(true);lyr_Dusun_1.setVisible(true);lyr_KabelListrik_2.setVisible(true);lyr_Relka_3.setVisible(true);lyr_Kontur_4.setVisible(true);lyr_JalanDesa_5.setVisible(true);lyr_Border_6.setVisible(true);lyr_Sungai_7.setVisible(true);lyr_Kontur_8.setVisible(true);lyr_Relka_9.setVisible(true);lyr_Kabel_Listrik_10.setVisible(true);lyr_Pemukiman_Warga_11.setVisible(true);lyr_Toponimi_12.setVisible(true);lyr_JalanKabupaten_13.setVisible(true);lyr_Jembatan_14.setVisible(true);lyr_Makam_15.setVisible(true);lyr_Bangunan_16.setVisible(true);lyr_Pemerintahan_17.setVisible(true);lyr_Pendidikan_18.setVisible(true);lyr_Rumah_Sakit_19.setVisible(true);lyr_Sarana_Ibadah_20.setVisible(true);
+lyr_OpenStreetMap_0.setVisible(true);lyr_Dusun_1.setVisible(true);lyr_KabelListrik_2.setVisible(true);lyr_Relka_3.setVisible(true);lyr_Kontur_4.setVisible(true);lyr_JalanDesa_5.setVisible(true);lyr_Border_6.setVisible(true);lyr_Sungai_7.setVisible(true);lyr_Kontur_8.setVisible(true);lyr_Relka_9.setVisible(true);lyr_Kabel_Listrik_10.setVisible(true);lyr_Pemukiman_Warga_11.setVisible(false);lyr_Toponimi_12.setVisible(true);lyr_JalanKabupaten_13.setVisible(true);lyr_Jembatan_14.setVisible(true);lyr_Makam_15.setVisible(true);lyr_Bangunan_16.setVisible(true);lyr_Pemerintahan_17.setVisible(true);lyr_Pendidikan_18.setVisible(true);lyr_Rumah_Sakit_19.setVisible(true);lyr_Sarana_Ibadah_20.setVisible(true);
 var layersList = [lyr_OpenStreetMap_0,lyr_Dusun_1,lyr_KabelListrik_2,lyr_Relka_3,lyr_Kontur_4,lyr_JalanDesa_5,lyr_Border_6,lyr_Sungai_7,lyr_Kontur_8,lyr_Relka_9,lyr_Kabel_Listrik_10,lyr_Pemukiman_Warga_11,lyr_Toponimi_12,lyr_JalanKabupaten_13,lyr_Jembatan_14,lyr_Makam_15,lyr_Bangunan_16,lyr_Pemerintahan_17,lyr_Pendidikan_18,lyr_Rumah_Sakit_19,lyr_Sarana_Ibadah_20];
 lyr_Dusun_1.set('fieldAliases', {'fid': 'fid', 'Name': 'Name', 'Database': 'Database', });
 lyr_KabelListrik_2.set('fieldAliases', {'fid': 'fid', 'Nama Kabel Listrik': 'Nama Kabel Listrik', });
