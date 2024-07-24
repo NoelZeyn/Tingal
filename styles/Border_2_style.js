@@ -1,11 +1,11 @@
 var size = 0;
 var placement = 'point';
-function categories_Dusun_1(feature, value, size, resolution, labelText,
+function categories_Border_2(feature, value, size, resolution, labelText,
                        labelFont, labelFill, bufferColor, bufferWidth,
                        placement) {
                 switch(value.toString()) {case 'Dusun Gansri':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(239,137,3,1.0)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(228,26,28,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.6479999999999997}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -13,7 +13,7 @@ function categories_Dusun_1(feature, value, size, resolution, labelText,
                     break;
 case 'Dusun Tingal':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(210,106,201,1.0)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(228,26,28,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.6479999999999997}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -21,7 +21,7 @@ case 'Dusun Tingal':
                     break;
 case 'Dusun Tulungsari Kulon':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(124,199,233,1.0)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(228,26,28,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.6479999999999997}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
@@ -29,14 +29,14 @@ case 'Dusun Tulungsari Kulon':
                     break;
 case 'Dusun Tulungsari Wetan':
                     return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.988}),fill: new ol.style.Fill({color: 'rgba(32,236,32,1.0)'}),
+        stroke: new ol.style.Stroke({color: 'rgba(228,26,28,1.0)', lineDash: null, lineCap: 'square', lineJoin: 'bevel', width: 3.6479999999999997}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
     })];
                     break;}};
 
-var style_Dusun_1 = function(feature, resolution){
+var style_Border_2 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -56,7 +56,7 @@ var style_Dusun_1 = function(feature, resolution){
         labelText = String("");
     }
     
-var style = categories_Dusun_1(feature, value, size, resolution, labelText,
+var style = categories_Border_2(feature, value, size, resolution, labelText,
                           labelFont, labelFill, bufferColor,
                           bufferWidth, placement);
 

@@ -1,7 +1,7 @@
 var size = 0;
 var placement = 'point';
 
-var style_Pemukiman_Warga_12 = function(feature, resolution){
+var style_Jembatan_19 = function(feature, resolution){
     var context = {
         feature: feature,
         variables: {}
@@ -21,8 +21,8 @@ var style_Pemukiman_Warga_12 = function(feature, resolution){
         labelText = String("");
     }
     var style = [ new ol.style.Style({
-        image: new ol.style.Circle({radius: 1.2 + size,
-            stroke: new ol.style.Stroke({color: 'rgba(35,35,35,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 0.0}), fill: new ol.style.Fill({color: 'rgba(196,60,57,1.0)'})}),
+        image: new ol.style.RegularShape({radius: 8.0 + size, points: 3,
+            stroke: new ol.style.Stroke({color: 'rgba(50,87,128,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(0,85,182,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth)
