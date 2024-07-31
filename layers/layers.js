@@ -88,7 +88,7 @@ var lyr_Kontur_5 = new ol.layer.Vector({
                 source:jsonSource_Kontur_5, 
                 style: style_Kontur_5,
                 popuplayertitle: "Kontur",
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/Kontur_5.png" /> Kontur'
             });
 var format_Relka_6 = new ol.format.GeoJSON();
@@ -163,7 +163,7 @@ var lyr_JalanKabupaten_10 = new ol.layer.Vector({
                 source:jsonSource_JalanKabupaten_10, 
                 style: style_JalanKabupaten_10,
                 popuplayertitle: "JalanKabupaten",
-                interactive: false,
+                interactive: true,
                 title: '<img src="styles/legend/JalanKabupaten_10.png" /> JalanKabupaten'
             });
 var format_Toponimi_11 = new ol.format.GeoJSON();
@@ -329,7 +329,7 @@ lyr_Dusun_1.set('fieldLabels', {'fid': 'hidden field', 'Name': 'inline label - a
 lyr_Perbatasan_2.set('fieldLabels', {'fid': 'no label', 'Name': 'no label', 'Database': 'no label', });
 lyr_JalanDesa_3.set('fieldLabels', {'fid': 'hidden field', 'Nama Jalan': 'hidden field', });
 lyr_Kabel_Listrik_4.set('fieldLabels', {'fid': 'no label', });
-lyr_Kontur_5.set('fieldLabels', {'fid': 'no label', });
+lyr_Kontur_5.set('fieldLabels', {'fid': 'header label - visible with data', });
 lyr_Relka_6.set('fieldLabels', {'fid': 'inline label - visible with data', });
 lyr_Sungai_7.set('fieldLabels', {'fid': 'no label', });
 lyr_Pemukiman_Warga_8.set('fieldLabels', {'fid': 'no label', });
